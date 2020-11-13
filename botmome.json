@@ -1,0 +1,29 @@
+const line = require('@line/bot-sdk');
+const ulr=('https://api.line.me/v2/bot/group/{groupId}/join')
+const client = new line.Client({
+  channelAccessToken: '<qANifNsLBwaqAT1tEVhOoq + wEorkxLuTQ6SRkH1EkiB50xdnXyn13xirmI + FErTlEQXsrtutmdN6yxhHO5hXFf8JOEAERkR3FSB9WCp + BqOZnMCthYzKg1>' #โทเค็นถูกต้อง
+});
+
+client.joinGroup('<groupId>')
+{
+  "events": [
+    {
+      "type": "memberjoin",
+      "mode": "active",
+{
+    "type": "text",
+    "text": "สวัสดีคุณ{Nickname}ยินดีต้อนรับเข้ากลุ่ม!!",
+    "sender": {
+        "name": "Allgroup",
+        "Url": "https://line.me/R/ti/g/~" #ใส่โทเค็นกลุ่มหรือลิ้งกลุ่ม
+    }
+}
+  .then(() => {
+ 
+				                   }
+				           }
+    ...
+  })
+  .catch((err) => {
+    // error handling
+  });
